@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    nav
+      if user
+        div
+          a(href="/logout") Logout
+        div
+          p Hi, #{user.name}
+      else
+        div
+          a(href="/signup") Signup
+        div
+          a(href="/login") Login
+    block content

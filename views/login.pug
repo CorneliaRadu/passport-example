@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1 Login
+  div
+    a(href="/signup") Signup
+  div
+    a(href="/") Home
+
+  form(action="/login", method="post")
+    div
+        input(type="email", name="email" placeholder="email" required)
+    div
+        input(type="password", name="password" placeholder="password" required)
+    div
+        input(type="submit", value="Login")
+        
+
